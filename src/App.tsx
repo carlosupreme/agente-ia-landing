@@ -16,8 +16,7 @@ import {
   TrendingUp,
   Clock,
   Megaphone,
-  LayoutDashboard,
-  X
+  LayoutDashboard
 } from "lucide-react";
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
@@ -54,11 +53,6 @@ const Button = React.forwardRef<HTMLButtonElement, React.ButtonHTMLAttributes<HT
 );
 Button.displayName = "Button";
 
-const Card = ({ className, children }: { className?: string; children: React.ReactNode }) => (
-  <div className={cn("rounded-3xl border border-zinc-100 bg-white p-6 shadow-sm hover:shadow-md transition-shadow duration-300", className)}>
-    {children}
-  </div>
-);
 
 const SectionHeading = ({ title, subtitle, className }: { title: string; subtitle?: string; className?: string }) => (
   <div className={cn("text-center max-w-3xl mx-auto mb-16", className)}>
